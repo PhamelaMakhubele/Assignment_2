@@ -12,6 +12,10 @@
   --container-width-md: 86%;
   --container-width-sm: 90%;
 
+  /*=======Responsive=======*/
+  --section-width-md: 1000px;
+  --section-width-sm:700px;
+
 }
 *{
   font-family: 'Inter', sans-serif;
@@ -95,8 +99,10 @@ html{
   padding-right: 40px;
 
 }
-.hamburger{
+
+.fa-regular{
   display: none;
+
 }
 
 
@@ -355,9 +361,15 @@ i{
   border:1px solid steelblue;
   border-radius: 200px;
   background-color: rgb(179, 211, 238);
+  opacity: 0.5;
   
   
 
+}
+.fa-pinterest-p{
+  background-color: white;
+
+  opacity: 0.5;
 }
 
 
@@ -384,32 +396,45 @@ i{
 
 /* Styles for desktop */
 @media only screen and (min-width: 1024px) {
+  .container{
+    width: 100%;
+  }
   
 }
+/*
 
-/* Styles for tablets */
+/* Styles for tablets 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .container{
     width: var(--container-width-md);
   }
-  .articleSec{
-    width: 1000px;
-   
+  section{
+    width: var(--section-width-md);
+
   }
+  .hamburger{
+    display: none;
+  }
+  
 }
 
-/* Styles for mobile phones */
+/* Styles for mobile phones 
 @media only screen and (max-width: 767px) {
   .container{
     width: var(--container-width-sm);
   }
-  .articleSec{
-    display: block;
-  }
- 
+  section{
+    width: var(--section-width-sm);
+  } 
+  .hamburger{
+    display: inline-block;
 
-}
-  
+  }
+
+
+
+}*/
+
   
 
 
