@@ -1,3 +1,4 @@
+
 :root{
   --primary-color:#CBDEEC;
   --secondary-color:#000000;
@@ -180,6 +181,7 @@ button{
   
 
 }
+
 .image{
   width: 250px;
   height: 200px;
@@ -384,7 +386,7 @@ i{
   bottom: -20px;
   width: 80px;
   height: 6px;
-  background-color: var(--primary-color); /* Customize the line color here */
+  background-color: var(--primary-color); 
   visibility: hidden;
   transition: all 2s ease-in-out;
 }
@@ -393,55 +395,4 @@ i{
   visibility: visible;
   
 }
-
-/* Styles for desktop */
-@media only screen and (min-width: 1024px) {
-  .container{
-    width: 100%;
-  }
-  
-}
-/*
-
-/* Styles for tablets 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .container{
-    width: var(--container-width-md);
-  }
-  section{
-    width: var(--section-width-md);
-
-  }
-  .hamburger{
-    display: none;
-  }
-  
-}
-
-/* Styles for mobile phones 
-@media only screen and (max-width: 767px) {
-  .container{
-    width: var(--container-width-sm);
-  }
-  section{
-    width: var(--section-width-sm);
-  } 
-  .hamburger{
-    display: inline-block;
-
-  }
-
-
-
-}*/
-
-  
-
-
-
-
-
-
-
-
 
