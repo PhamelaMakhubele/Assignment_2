@@ -8,11 +8,18 @@
   --hero-height:800px;
   --otherSec-width:1600px;
 
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+
 }
 *{
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
 
+}
+html{
+  scroll-behavior: smooth;
 }
 
 
@@ -21,7 +28,8 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 2000px;
+  /*width: 2000px;*/
+  width: var(--container-width-lg);
   height: fit-content;
   margin-left: 120px;
   
@@ -86,6 +94,9 @@
 .nav-space{
   padding-right: 40px;
 
+}
+.hamburger{
+  display: none;
 }
 
 
@@ -153,7 +164,7 @@ button{
 .articleSec{
   width: 1400px;
  /* height:calc( var(--hero-height) - 500px);*/
- height: 500px;
+  height: 500px;
   background-color: var(--backdrop_color);
   display: flex;
   text-align: center;
@@ -370,6 +381,39 @@ i{
   visibility: visible;
   
 }
+
+/* Styles for desktop */
+@media only screen and (min-width: 1024px) {
+  
+}
+
+/* Styles for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container{
+    width: var(--container-width-md);
+  }
+  .articleSec{
+    width: 1000px;
+   
+  }
+}
+
+/* Styles for mobile phones */
+@media only screen and (max-width: 767px) {
+  .container{
+    width: var(--container-width-sm);
+  }
+  .articleSec{
+    display: block;
+  }
+  .aboutSec{
+    display: block;
+  }
+
+}
+  
+  
+
 
 
 
