@@ -61,7 +61,8 @@ html{
 
 
 }
-.fa-solid .fa-bars{
+ .fa-bars{
+  display: none;
   visibility: hidden;
 }
 
@@ -394,7 +395,7 @@ i{
 
 
 @media screen and (max-width: 1200px) {
-  /* Adjust styles for screens up to 1200px */
+  
   .container {
     margin-left: 0;
   }
@@ -449,7 +450,7 @@ i{
 }
 
 @media screen and (max-width: 1000px) {
-  /* Adjust styles for screens up to 1000px */
+  
   .HeroSec {
     width: 100%;
     background-size: cover;
@@ -549,7 +550,7 @@ i{
 
 
 @media screen and (max-width: 600px) {
-  /* Adjust styles for screens up to 600px */
+  
   .HeroSec {
     width: var(--container-width-sm);
     height: 450px;
