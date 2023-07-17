@@ -9,6 +9,10 @@
   --hero-height:800px;
   --otherSec-width:1600px;
 
+  --container-width-lg:1200px;
+  --container-width-md:1000px;
+  --container-width-sm:600px;
+
 
 }
 *{
@@ -26,9 +30,6 @@ html{
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 2000px;
-  
-  height: fit-content;
   margin-left: 120px;
   
   
@@ -59,6 +60,9 @@ html{
   
 
 
+}
+.fa-solid .fa-bars{
+  visibility: hidden;
 }
 
 .logo{
@@ -94,10 +98,7 @@ html{
 
 }
 
-.fa-regular{
-  display: none;
 
-}
 
 
 a{
@@ -126,6 +127,9 @@ button{
 
 
 
+}
+.fa-solid .fa-bars{
+  display: none;
 }
 .subs{
   float: right;
@@ -168,13 +172,13 @@ h1{
 }
 .articleSec{
   width: 1400px;
- /* height:calc( var(--hero-height) - 500px);*/
-  height: 500px;
-  background-color: var(--backdrop_color);
+  background: var(--backdrop_color);
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   padding-left: 200px;
+  padding-bottom: 100px ;
+
 
 }
 
@@ -182,12 +186,17 @@ h1{
 .image{
   width: 250px;
   height: 200px;
-  margin-bottom: 0px;
+  padding-bottom: 50px;
 }
 .drones-articles{
-  display: block;
-  padding-right: 20px;
-  border-left: 20px solid var(--backdrop_color);
+  width: 250px;
+  height: 200;
+  margin-right: 20px;
+  align-items: center;
+  text-align: center;
+  border: 3px solid var(--backdrop_color);
+  background-color: white;
+  
  
   
  
@@ -203,18 +212,7 @@ h1{
 
  
 }
-.about-drones{
-  
-  width: 250px;
-  height: 150px;
-  align-items: center;
-  text-align: center;
-  border: 3px solid var(--backdrop_color);
-  background: white;
-  padding-top: 48px;
-  
-  
-}
+
 p:hover{
   color: steelblue;
   
@@ -392,4 +390,245 @@ i{
   visibility: visible;
   
 }
+
+
+
+@media screen and (max-width: 1200px) {
+  /* Adjust styles for screens up to 1200px */
+  .container {
+    margin-left: 0;
+  }
+  
+  .headerNav {
+    text-align: center;
+    
+  }
+
+  .nav-space {
+    padding-right: 20px;
+  }
+  .fa-bars{
+    display: none;
+    visibility: hidden;
+  }
+  
+
+  .articleSec {
+    padding-left: 70px;
+    padding-right: 130px;
+
+  }
+  .heading{
+    width: var(--container-width-lg);
+    padding-right: 300px;
+  }
+  .drones-articles{
+    margin-left: 50px;
+  }
+  .aboutSec{
+    width: var(--container-width-lg);
+    display: flex;
+  }
+  .about-Image{
+    width: 800px;
+
+    
+
+    
+  }
+  .about{
+    width: 800px;
+  }
+  .icons{
+    padding-right: 200px;
+  }
+  .navfooter a{
+    text-align: center;
+    padding-left: 200px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* Adjust styles for screens up to 1000px */
+  .HeroSec {
+    width: 100%;
+    background-size: cover;
+    margin-left: 0;
+  }
+  
+
+  .hero-Header {
+    font-size: 80px;
+  }
+
+  .headerNav {
+    padding: 10px;
+    text-align: center;
+    padding-left: 350px;
+  }
+  .subs{
+    margin-left: 150px;
+  }
+  .fa-bars{
+    display: none;
+    visibility: hidden;
+  }
+
+  .articleSec {
+    width: 100%;
+    display: flex;
+    padding-top: 40px;
+    margin-left: 0px;
+    margin-right: 0;
+    
+  }
+  .heading{
+    width: var(--container-width-md);
+    text-align: center;
+    padding: 0;
+    padding-top:20px ;
+    height: 200px;
+   
+  }
+
+  .drones-articles {
+    width: 300px;
+    margin-left: 70px;
+    margin-bottom: 40px;
+    height: 400px;
+   
+  }
+  .image{
+    width: 300px;
+  }
+  .aboutSec{
+    width: var(--container-width-md);
+  }
+
+  .about-Image{
+    width: 500px;
+
+  }
+  .about{
+    width: 500px;
+  }
+  .subscription{
+    width: 1000px;
+  }
+  footer{
+    width: var(--container-width-md);
+    display: flex;
+    border: 0;
+    height: 250px;
+
+  }
+  .icons{
+    display: inline;
+    width: 200px;
+    padding-right: 0px;
+    
+    
+  }
+  .navfooter{
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 0;
+  }
+  a {
+    padding-left: 0px;
+  }
+  .a-hover{
+   text-align: center;
+   padding-left: 0px;
+
+  }
+  
+ 
+  }
+  
+
+
+@media screen and (max-width: 600px) {
+  /* Adjust styles for screens up to 600px */
+  .HeroSec {
+    width: var(--container-width-sm);
+    height: 450px;
+   
+  }
+ 
+  .headerNav a {
+    display: none;
+
+   
+  }
+   .fa-bars{
+    visibility: visible;
+    display: flex;
+    float: right;
+    
+  }
+  .subs{
+    display: none;
+  }
+  .heading{
+    width: var(--container-width-sm);
+    padding-left: 0px;
+    
+  }
+
+  .articleSec {
+
+    padding: 0;
+  }
+
+  .drones-articles{
+    align-items: center;
+    margin-left: 140px;
+
+  }
+  .aboutSec{
+    width: var(--container-width-sm);
+   
+    
+  }
+  .about-Image{
+    width: var(--container-width-sm);
+    height: 400px;
+  }
+  .about-article{
+    display: inline-block;
+  }
+ .about{
+  display: block;
+ }
+
+ .subscription{
+  width: var(--container-width-sm);
+ }
+ footer{
+  width: var(--container-width-sm);
+ }
+ footer .subs{
+  float: left;
+  display: flex;
+  visibility: visible;
+  margin-top: 30px;
+  margin-left: 180px;
+  
+ }
+ 
+
+
+  
+
+  
+  
+}
+
+
+
+
+
+
+
 
