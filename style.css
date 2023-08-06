@@ -20,6 +20,10 @@
   scroll-behavior: smooth;
 
 }
+body{
+  width: 100%;
+  overflow-x: hidden;
+}
 html{
   scroll-behavior: smooth;
 }
@@ -30,7 +34,7 @@ html{
   position: relative;
   justify-content: center;
   align-items: center;
-  margin-left: 120px;
+  
   
   
 
@@ -38,12 +42,13 @@ html{
 .HeroSec{
 
   background-image: var(--Hero-image);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: var(--hero-width);
+  /*width: var(--hero-width);*/
+  width: 100%;
   height: var(--hero-height);
-  margin-left: 50px;
-  margin-bottom: 20px;
+  margin: 20px;
+  
 
   
 }
@@ -72,12 +77,12 @@ html{
   
 }
 .char-first{
-  font-size: small;
+  font-size: large;
   padding-left: 20px;
   
 }
 .char-color{
-  font-size: small;
+  font-size: large;
   color: var(--primary-color);
   padding-top:0px ;
 }
@@ -87,10 +92,11 @@ html{
 
   
 }
-.headerNav{
-  padding-left: 400px;
-  justify-content: center;
-  padding-right: 400px;
+ .headerNav {
+  padding-left: 600px;
+  text-align: center;
+  /*justify-content: center;*/
+  padding-right: 380px;
   padding-top: 20px;
   
 }
@@ -172,7 +178,7 @@ h1{
 
 }
 .articleSec{
-  width: 1400px;
+  width: 100%;
   background: var(--backdrop_color);
   display: flex;
   flex-wrap: wrap;
@@ -197,10 +203,8 @@ h1{
   text-align: center;
   border: 3px solid var(--backdrop_color);
   background-color: white;
+  padding-bottom: 50px;
   
- 
-  
- 
 
 }
 .image-lines{
@@ -220,10 +224,11 @@ p:hover{
 }
 .description{
   padding-top: 16px;
+  text-align: center;
 }
 
 .heading{
-  width: 1400px;
+  width: 100%;
   height: 100px;
   text-transform: uppercase;
   background: var(--backdrop_color);
@@ -256,7 +261,7 @@ p{
 }
 .aboutSec{
   background: var(--backdrop_color);
-  width: var(--otherSec-width);
+  width: 100%;
   margin-bottom: 0px !important;
   
 
@@ -292,7 +297,7 @@ p{
   font-size: 16px;
 }
 .subscription{
-  width: var(--otherSec-width);
+  width: 100%;
   background: var(--backdrop_color);
   height: 400px;
   margin-top: 0px !important;
@@ -338,7 +343,7 @@ input{
 
 }
 footer{
-  width: var(--otherSec-width);
+  width: 100%;
   height:100px;
   background: var(--white-color);
   display: flex;
@@ -347,11 +352,14 @@ footer{
 }
 .icons{
   
-  padding-right: 1000px;
+  padding-right: 900px;
   opacity: 0.5;
 
 
 
+}
+.fa-brands{
+  color: blue;
 }
 i{
   padding: 7px;
@@ -384,7 +392,7 @@ i{
   height: 6px;
   background-color: var(--primary-color); 
   visibility: hidden;
-  transition: all 2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .a-hover:hover::after {
@@ -427,7 +435,7 @@ i{
     margin-left: 50px;
   }
   .aboutSec{
-    width: var(--container-width-lg);
+    width: 100%;
     display: flex;
   }
   .about-Image{
@@ -484,7 +492,7 @@ i{
     
   }
   .heading{
-    width: var(--container-width-md);
+    width: 100%;
     text-align: center;
     padding: 0;
     padding-top:20px ;
@@ -514,10 +522,10 @@ i{
     width: 500px;
   }
   .subscription{
-    width: 1000px;
+    width: 100%;
   }
   footer{
-    width: var(--container-width-md);
+    width: 100%;
     display: flex;
     border: 0;
     height: 250px;
@@ -552,7 +560,7 @@ i{
 @media screen and (max-width: 600px) {
   
   .HeroSec {
-    width: var(--container-width-sm);
+    width: 100%;
     height: 450px;
    
   }
@@ -572,7 +580,7 @@ i{
     display: none;
   }
   .heading{
-    width: var(--container-width-sm);
+    width: 100%;
     padding-left: 0px;
     
   }
@@ -588,7 +596,7 @@ i{
 
   }
   .aboutSec{
-    width: var(--container-width-sm);
+    width: 100%;
    
     
   }
@@ -604,10 +612,10 @@ i{
  }
 
  .subscription{
-  width: var(--container-width-sm);
+  width: 100%;
  }
  footer{
-  width: var(--container-width-sm);
+  width: 100%;
  }
  footer .subs{
   float: left;
